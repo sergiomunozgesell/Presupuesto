@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <div class="main-container">
+        <div class="top">
+            <h1>Presupuesto total:</h1>
+            <h2 class="presupuesto" id="presupuesto">$0</h2>
+            
+            <h1>Ingresos totales:</h1>
+            <h2 class="Ingresos" id="Ingresos">$0</h2>
+    
+            <h1 >Egresos totales:</h1>
+            <h2 class="Egresos" id="Egresos">$0</h2>    
+        </div>
+    
+        <div class="mid">
+            <form action="" id="form">
+                <select name="" id="combo">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                </select>
+                <input class="input" id="monto" type="number" placeholder="Monto">
+                <input class="input" id="asunto" type="text" placeholder="Asunto">
+            </form>
+            <button class="button" onclick="Agregar()" >Agregar</button>
+        </div>
+
+        <div class="bottom">
+            <div class="list-con">
+            <h1>Ingresos</h1>
+            <ul class="lista" id="list-ingre">
+                
+            </ul>
+            </div>
+            <div class="list-con">
+                <h1>Egresos</h1>
+                <ul class="lista"  id="list-egre">
+                
+                </ul>
+            </div>                    
+        </div>
+
+    </div>
+
+    <script src="class.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
